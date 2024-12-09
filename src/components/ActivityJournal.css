@@ -1,0 +1,193 @@
+.activity-journal {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.activity-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-input,
+.form-select {
+  padding: 10px;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  font-size: 1em;
+  flex: 1;
+}
+
+.form-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.satisfaction-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.star-rating {
+  display: flex;
+  gap: 5px;
+}
+
+.star-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0;
+  color: #ffd700;
+  transition: transform 0.2s ease;
+}
+
+.star-button:hover {
+  transform: scale(1.1);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-button:hover {
+  background: #2980b9;
+}
+
+.activity-timeline {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-timeline h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.timeline-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.activity-entry {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.activity-header h4 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.activity-details {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.activity-category {
+  background: #e9ecef;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #495057;
+}
+
+.activity-duration {
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+.activity-satisfaction {
+  color: #ffd700;
+  letter-spacing: 2px;
+}
+
+.activity-description {
+  margin: 10px 0;
+  color: #495057;
+  line-height: 1.4;
+}
+
+.activity-timestamp {
+  color: #6c757d;
+  font-size: 0.85em;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: #ffebee;
+  color: #f44336;
+}
+
+/* Category colors */
+.category-work { border-left-color: #2196F3; }
+.category-exercise { border-left-color: #4CAF50; }
+.category-study { border-left-color: #9C27B0; }
+.category-leisure { border-left-color: #FF9800; }
+.category-social { border-left-color: #E91E63; }
+.category-self-care { border-left-color: #00BCD4; }
+.category-other { border-left-color: #607D8B; }
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .activity-details {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
